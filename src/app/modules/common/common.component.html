@@ -1,0 +1,32 @@
+<!-- <app-header></app-header>
+<div class="main-wrapper">
+    <div class="sidebar-wrapper open">
+        <div
+            [ngClass]="{'sidebar-container' : true,'sidebar-active': isSidebarActive, 'sidebar-inactive' : !isSidebarActive}">
+            <app-sidebar [isSidebarActive]="isSidebarActive"
+                (childEvent)="receiveData($event)"></app-sidebar>
+        </div>
+    </div>
+    <div class="main-page view">
+        <app-main></app-main>
+        <app-footer></app-footer>
+    </div>
+</div>
+ -->
+
+<div class="complete-container">
+    <div
+        [ngClass]="{'sidebar-container' : true,'sidebar-active': isSidebarActive, 'sidebar-inactive' : !isSidebarActive}">
+        <app-sidebar [isSidebarActive]="isSidebarActive"
+            (childEvent)="receiveData($event)"></app-sidebar>
+    </div>
+    <div class="main-body-container">
+        <div class="navbar-container">
+
+            <app-header></app-header>
+
+            <app-main></app-main>
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>

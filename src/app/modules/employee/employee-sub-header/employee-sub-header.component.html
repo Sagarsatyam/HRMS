@@ -1,0 +1,152 @@
+<div class="main">
+    <!-- Responsive Navigation for Tabs -->
+    <div class="main">
+
+        <!-- Responsive Navigation for Tabs -->
+        <div class="responsive-tabs d-md-none d-flex align-items-center">
+            <div class="ms-2">
+                <a routerLink="/main/dashboard" class="black-link">
+                    <i class="fas fa-house fa-fw fs-4"></i>
+                </a>
+            </div>
+            <div class="ms-2">
+                <a routerLink="/" class="black-link">
+                    <i class="fas fa-arrow-left fa-fw fs-4"></i>
+                </a>
+            </div>
+            <select class="form-select mb-1" (change)="selectTab($event)">
+                <option></option>
+                <!-- <option value="/employeeDashboard">Home</option> -->
+                <option value="/pd">Personal Details</option>
+                <option value="/">Employment</option>
+                <option value="/">Contact</option>
+                <option value="/">Address</option>
+                <option value="/">Identity</option>
+                <option value="/">Qualification </option>
+                <option value="/">Bank account</option>
+                <option value="/">Family</option>
+                <option value="/">Experience</option>
+            </select>
+        </div>
+
+        <div class="card tab-box">
+            <div class="row user-tabs">
+                <div class="d-none d-md-block">
+                    <nav>
+                        <ul class="nav">
+
+                            <!-- Example for Personal Details tab -->
+
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="/main/dashboard">
+                                    <i class="fas fa-house fa-fw me-2"></i>
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="/">
+                                    <i class="fas fa-arrow-left fa-fw me-2"></i>
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="../pd">
+                                    <i
+                                        class="fas fa-user fa-fw me-2"></i>Personal
+                                    Details
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="/">
+                                    <i
+                                        class="fas fa-user fa-fw me-2"></i>Employment
+                                </a>
+                            </li><li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="/">
+                                    <i
+                                        class="fas fa-user fa-fw me-2"></i>Contact
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="/">
+                                    <i
+                                        class="fas fa-user fa-fw me-2"></i>Address
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="/">
+                                    <i
+                                        class="fas fa-user fa-fw me-2"></i>Identity
+                                </a>
+                            </li>
+                            <li class="tab nav-item">
+                                <a data-bs-toggle="tab" class="nav-link"
+                                    routerLink="/">
+                                    <i
+                                        class="fas fa-id-card fa-fw me-2"></i>Qualification
+                                </a>
+                            </li>
+
+                            <!-- Repeat the above pattern for other tabs -->
+
+                            <!-- <li class="tab nav-item" [ngClass]="{ 'active': activeTab === 'dashboard' }">
+              <span data-bs-toggle="tab" class="nav-link active" routerLink="/employeeDashboard"><i class="fas fa-house fa-fw me-2"></i></span>
+            </li>
+            <li class="tab nav-item" [ngClass]="{ 'active': activeTab === 'back' }">
+              <span data-bs-toggle="tab" class="nav-link active" (click)="goBack()"><i class="fas fa-arrow-left fa-fw me-2"></i></span>
+            </li> -->
+                            <!-- <li class="tab nav-item" [ngClass]="{ 'active': activeTab === 'personalDetails' }">
+              <a data-bs-toggle="tab" class="nav-link" routerLink="/pd"><i class="fas fa-user fa-fw me-2"></i>Personal Details</a>
+            </li> -->
+                            <!-- <li class="tab nav-item" [ngClass]="{ 'active': activeTab === 'employment' }">
+              <a data-bs-toggle="tab" class="nav-link" routerLink="/employer"><i class="fas fa-user fa-fw me-2"></i>Employment</a>
+            </li> -->
+                            <!-- <li class="tab nav-item" [ngClass]="{ 'active': activeTab === 'contact' }">
+              <a data-bs-toggle="tab" class="nav-link" routerLink="/contact"><i class="fas fa-id-card fa-fw me-2"></i>Contact</a>
+            </li> -->
+                            <!-- <li class="tab nav-item" [ngClass]="{ 'active': activeTab === 'address' }">
+              <a data-bs-toggle="tab" class="nav-link" routerLink="/addr"><i class="fa-solid fa-location-dot"></i> Address</a>
+            </li>
+            <li class="tab nav-item" [ngClass]="{ 'active': activeTab === 'identity' }">
+              <a data-bs-toggle="tab" class="nav-link" routerLink="/identity"><i class="fa-solid fa-id-badge"></i> Identity</a>
+            </li>
+            <li class="tab nav-item" [ngClass]="{ 'active': activeTab === 'qualification' }">
+              <a data-bs-toggle="tab" class="nav-link" routerLink="/que"><i class="fas fa-user-graduate fa-fw me-2"></i>Qualification</a>
+            </li> -->
+                            <!-- <div class="dropdownmore">
+                                <li class=" dropdown">
+                                    <span class=" dropdownmore"
+                                        data-bs-toggle="dropdown" role="button"
+                                        aria-expanded="false">More &nbsp;<i
+                                            class="fa-solid fa-ellipsis-vertical"></i></span>
+                                    <ul class="dropdown-menu">
+                                        <li><hr class="dropdown-divider" /></li>
+                                        <li><a class="dropdown-item"
+                                                routerLink="/"><i
+                                                    class="fa-solid fa-building-columns"></i>
+                                                Bank account</a></li>
+                                        <li><a class="dropdown-item"
+                                                routerLink="/family"><i
+                                                    class="fas fa-user-group "></i>
+                                                Family</a></li>
+                                        <li><a class="dropdown-item"
+                                                routerLink="/"><i
+                                                    class="fas fa-medal "></i>
+                                                Experience</a></li>
+                                        <li><hr class="dropdown-divider" /></li>
+                                    </ul>
+                                </li>
+                            </div> -->
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>

@@ -1,0 +1,25 @@
+<nav class="navbar">
+    <div class="upper-navbar">
+        <h4 class="navbar-heading">
+            <!-- <button class="nav-sidebar-toggle-btn" (click)="sendDataToParent()">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </button> -->
+            NTPL HRMS
+        </h4>
+        <div mdbDropdown class="btn-group logout-btn-container">
+            <button type="button" class="btn logout-btn" (click)="logout()">
+                <i class="fa-solid fa-arrow-right-from-bracket fa-lg"
+                    style="color: #ffffff;"></i>
+                Logout
+            </button>
+            <button type="button"
+                class="btn logout-btn-icon dropdown-toggle dropdown-toggle-split"
+                mdbDropdownToggle
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+
+        </div>
+    </div>
+
+</nav>

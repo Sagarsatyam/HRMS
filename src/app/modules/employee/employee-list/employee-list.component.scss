@@ -1,0 +1,44 @@
+.Table-body {
+  overflow-y: auto; /* This property enables the vertical scrollbar */
+  max-height: 500px; /* Set a maximum height for the container */
+  border: 1px solid #ccc;
+}
+
+.Table-body::-webkit-scrollbar {
+  width: 12px;
+}
+
+.Table-body::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.Table-body::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+.text-center {
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 800px;
+}
+.top {
+  margin-top: 10vh;
+  margin-left: 7vw;
+}
+
+.top {
+  margin-top: 10vh;
+  margin-left: 7vw;
+}
+
+#button {
+  width: 20vw;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black !important;
+}

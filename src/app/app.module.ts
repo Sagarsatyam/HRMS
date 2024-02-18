@@ -1,0 +1,107 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { LoginComponent } from './components/login/login.component';
+import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
+import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
+import { MdbDropdownModule } from 'mdb-angular-ui-kit/dropdown';
+import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
+import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
+import { MdbPopoverModule } from 'mdb-angular-ui-kit/popover';
+import { MdbRadioModule } from 'mdb-angular-ui-kit/radio';
+import { MdbRangeModule } from 'mdb-angular-ui-kit/range';
+import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
+import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
+import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
+import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
+import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import { MatFormFieldModule } from '@angular/material/form-field';
+// import { AppRoutingModule } from './app-routing.module';
+// import { AppComponent } from './app.component';
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+// import { NotFoundComponent } from './components/not-found/not-found.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { LoginComponent } from './components/login/login.component';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+// import { ScriptLoaderService } from '../assets/js/script-loader.service';
+import { MatInputModule } from '@angular/material/input';
+import { CommonModule } from '@angular/common';
+import { MatSelectModule } from '@angular/material/select';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ScriptLoaderService } from 'src/assets/js/script-loader.service';
+import { ProsonalDetailsComponent } from './modules/employee/prosonal-details/prosonal-details.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    ForgotPasswordComponent,
+    NotFoundComponent,
+    //  ProsonalDetailsComponent
+
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MdbAccordionModule,
+    MdbCarouselModule,
+    MdbCheckboxModule,
+    MdbCollapseModule,
+    MdbDropdownModule,
+    MdbFormsModule,
+    MdbModalModule,
+    MdbPopoverModule,
+    MdbRadioModule,
+    MdbRangeModule,
+    MdbRippleModule,
+    MdbScrollspyModule,
+    MdbTabsModule,
+    MdbTooltipModule,
+    MdbValidationModule,
+    BrowserAnimationsModule,
+    //  FontAwesomeModule,
+    MatFormFieldModule,
+    // NgbModule,
+    // FontAwesomeModule,
+    FormsModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatDividerModule,
+    MatListModule,
+    MatSelectModule,
+    CommonModule,
+    HttpClientModule
+
+  ],
+  providers: [ScriptLoaderService],
+
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

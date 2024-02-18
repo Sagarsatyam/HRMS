@@ -1,0 +1,130 @@
+.navbar {
+  display: block;
+  box-shadow: none;
+  padding: 0;
+  // height: ;
+}
+.upper-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  // background: linear-gradient(to right, rgb(255, 219, 16), rgb(255, 101, 40), rgb(253, 149, 13)); // gradient 1
+  background: linear-gradient(
+    to right,
+    rgb(255, 176, 73),
+    rgb(255, 101, 40),
+    rgb(253, 149, 13)
+  ); // gradient 2
+  // background: linear-gradient(to right, rgb(77, 211, 122), rgb(15, 136, 55), rgb(46, 146, 80)); // gradient 3
+  // background: linear-gradient(to right, rgb(252, 148, 12), rgb(250, 107, 25));  // original
+  width: 110%;
+  margin-left: -10%;
+}
+
+.navbar-heading {
+  margin-left: 10%;
+  color: white;
+}
+
+.nav-sidebar-toggle-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 0px 4px;
+}
+
+.logout-btn-container {
+  border-radius: 2rem;
+  margin-right: 7rem;
+  box-shadow: none;
+}
+
+.logout-btn,
+.logout-btn-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 2rem;
+}
+
+.lower-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 0.3rem 1rem;
+}
+
+.partition {
+  width: 1px;
+  height: 70%;
+  margin: 0px 0.5rem;
+  background-color: rgb(197, 197, 197);
+}
+
+.left-lower-nav .nav-home-btn {
+  background-color: rgba(255, 133, 52, 0.2);
+  box-shadow: none;
+  color: rgb(250, 132, 35);
+  padding: 0.5rem;
+}
+
+.left-lower-nav .nav-home-btn:hover {
+  background-color: rgba(248, 118, 32, 0.3);
+}
+
+.left-lower-nav .nav-home-btn img {
+  width: 1.3rem;
+}
+
+.mid-lower-nav {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px 0.5rem;
+  // gap: 1rem;
+}
+
+.faq-btn,
+.share-btn {
+  padding: 0.3rem 0.8rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin: 0px 5px;
+  transition: 0.2s ease;
+}
+
+.faq-btn {
+  background-color: #ff9b44;
+}
+
+.faq-btn:hover {
+  background-color: #f38e35;
+}
+
+.share-btn {
+  background-color: rgba(129, 129, 255, 0.5);
+}
+
+.share-btn:hover {
+  background-color: rgba(108, 108, 243, 0.5);
+}
+
+@media (max-width: 500px) {
+  .lower-navbar {
+    display: none;
+  }
+  .logout-btn-container {
+    margin-right: 1rem;
+  }
+  .navbar-heading {
+    font-size: 1.3rem;
+  }
+  .logout-btn,
+  .logout-btn-icon {
+    font-size: 0.8rem;
+  }
+}

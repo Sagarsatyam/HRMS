@@ -1,0 +1,202 @@
+<div class="full-container">
+  <div class="logo-container">
+    <img src="../../../assets/img/logo_small.png" alt class="logo-img"
+      *ngIf="!isSidebarActive">
+    <img src="../../../assets/img/logo_big.png" alt class="logo-img-active"
+      *ngIf="isSidebarActive">
+  </div>
+  <div class="profile-container">
+    <div
+      [ngClass]="{'profile-image': true, 'profile-image-active': isSidebarActive}">
+      <img src="../../../assets/img/user-img.jpg" class="profile-photo">
+    </div>
+    <div class="profile-text" *ngIf="isSidebarActive">
+      <span class="profile-text-bold">John Doe</span><br>
+      <span>CHRO</span>
+    </div>
+  </div>
+  <!-- Searchbar Section -->
+  <div class="search-container" *ngIf="isSidebarActive">
+    <input type="text" class="search" placeholder="Search">
+    <button><img src="../../../assets/img/search-icon.png" alt></button>
+  </div>
+  <button class="toggle-btn"
+    [ngClass]="{'rotate-btn' : isSidebarActive, 'toggle-btn' : true}"
+    (click)="sendDataToParent()">
+    >
+  </button>
+
+  <div class="inactive-icon-container" *ngIf="!isSidebarActive">
+
+    <div class="sidebar-icon-div" (click)="inactiveSidebarClick()"
+      *ngIf="!isSidebarActive">
+      <button>
+        <img class="sidebar-icon" src="../../../assets/img/home-icon.png" alt>
+      </button>
+    </div>
+
+    <div class="sidebar-icon-div" (click)="inactiveSidebarClick()"
+      *ngIf="!isSidebarActive">
+      <button>
+        <img class="sidebar-icon" src="../../../assets/img/admin-icon.png" alt>
+      </button>
+    </div>
+
+    <div class="sidebar-icon-div" (click)="inactiveSidebarClick()"
+      *ngIf="!isSidebarActive">
+      <button>
+        <img class="sidebar-icon" src="../../../assets/img/products-icon.png"
+          alt>
+      </button>
+    </div>
+
+    <div class="sidebar-icon-div" (click)="inactiveSidebarClick()"
+      *ngIf="!isSidebarActive">
+      <button>
+        <img class="sidebar-icon" src="../../../assets/img/orders-icon.png" alt>
+      </button>
+    </div>
+
+    <div class="sidebar-icon-div" (click)="inactiveSidebarClick()"
+      *ngIf="!isSidebarActive">
+      <button>
+        <img class="sidebar-icon" src="../../../assets/img/sales-icon.png" alt>
+      </button>
+    </div>
+
+    <div class="sidebar-icon-div" (click)="inactiveSidebarClick()"
+      *ngIf="!isSidebarActive">
+      <button>
+        <img class="sidebar-icon" src="../../../assets/img/coupons-icon.png"
+          alt>
+      </button>
+    </div>
+  </div>
+  <!-- Nested List Section -->
+  <!-- <div class="accordion-container" *ngIf="isSidebarActive">
+    <mdb-accordion class="accordion" [borderless]="true">
+
+      
+
+      <mdb-accordion-item *ngIf="isSidebarActive">
+        <ng-template mdbAccordionItemHeader>
+          <img class="sidebar-icon" src="../../../assets/img/home-icon.png" alt="">
+          Dashboard
+        </ng-template>
+        <ng-template mdbAccordionItemBody>
+          <ul>
+            <li>Link Item</li>
+            <li>Link Item</li>
+            <li>Link Item</li>
+          </ul>
+        </ng-template>
+      </mdb-accordion-item>
+
+      
+
+      <mdb-accordion-item *ngIf="isSidebarActive">
+        <ng-template mdbAccordionItemHeader>
+          <img class="sidebar-icon" src="../../../assets/img/admin-icon.png" alt="">
+          Admin
+        </ng-template>
+        <ng-template mdbAccordionItemBody>
+          <ul>
+            <li>Link Item</li>
+            <li>Link Item</li>
+            <li>Link Item</li>
+          </ul>
+        </ng-template>
+      </mdb-accordion-item>
+
+      
+
+      <mdb-accordion-item *ngIf="isSidebarActive">
+        <ng-template mdbAccordionItemHeader>
+          <img class="sidebar-icon" src="../../../assets/img/products-icon.png" alt="">
+          Products
+        </ng-template>
+        <ng-template mdbAccordionItemBody>
+          <ul>
+            <li>Link Item</li>
+            <li>Link Item</li>
+            <li>Link Item</li>
+          </ul>
+        </ng-template>
+      </mdb-accordion-item>
+
+      
+
+      <mdb-accordion-item *ngIf="isSidebarActive">
+        <ng-template mdbAccordionItemHeader>
+          <img class="sidebar-icon" src="../../../assets/img/orders-icon.png" alt="">
+          Orders
+        </ng-template>
+        <ng-template mdbAccordionItemBody>
+          <ul>
+            <li>Link Item</li>
+            <li>Link Item</li>
+            <li>Link Item</li>
+          </ul>
+        </ng-template>
+      </mdb-accordion-item>
+
+      
+
+      <mdb-accordion-item *ngIf="isSidebarActive">
+        <ng-template mdbAccordionItemHeader>
+          <img class="sidebar-icon" src="../../../assets/img/sales-icon.png" alt="">
+          Sales
+        </ng-template>
+        <ng-template mdbAccordionItemBody>
+          <ul>
+            <li>Link Item</li>
+            <li>Link Item</li>
+            <li>Link Item</li>
+          </ul>
+        </ng-template>
+      </mdb-accordion-item>
+
+      
+
+      <mdb-accordion-item *ngIf="isSidebarActive">
+        <ng-template mdbAccordionItemHeader>
+          <img class="sidebar-icon" src="../../../assets/img/coupons-icon.png" alt="">
+          Coupons
+        </ng-template>
+        <ng-template mdbAccordionItemBody>
+          <ul>
+            <li>Link Item</li>
+            <li>Link Item</li>
+            <li>Link Item</li>
+          </ul>
+        </ng-template>
+      </mdb-accordion-item>
+    </mdb-accordion>
+  </div> -->
+  <div class="active-links-container" *ngIf="isSidebarActive">
+    <a routerLink="Empdashboard">
+      <img class="sidebar-icon" src="../../../assets/img/home-icon.png" alt>
+      Dashboard
+    </a>
+    <a routerLink="empSubHeader">
+      <img class="sidebar-icon" src="../../../assets/img/admin-icon.png" alt>
+      Employment
+    </a>
+    <a routerLink>
+      <img class="sidebar-icon" src="../../../assets/img/products-icon.png" alt>
+      Products
+    </a>
+    <a routerLink>
+      <img class="sidebar-icon" src="../../../assets/img/orders-icon.png" alt>
+      Orders
+    </a>
+    <a routerLink>
+      <img class="sidebar-icon" src="../../../assets/img/sales-icon.png" alt>
+      Sales
+    </a>
+    <a routerLink>
+      <img class="sidebar-icon" src="../../../assets/img/coupons-icon.png" alt>
+      Coupons
+    </a>
+  </div>
+</div>
